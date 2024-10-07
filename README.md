@@ -41,14 +41,13 @@ The project leverages the following technologies:
 - [React](https://reactjs.org/): A JavaScript library for building user interfaces.
 - [React Router DOM](https://reactrouter.com/): Declarative routing for React applications.
 - [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript that compiles to plain JavaScript.
-- [Styled Components](https://styled-components.com/): Use tagged template literals to style your React components.
+- [Tailwind](https://tailwindcss.com/): Rapidly build modern websites without ever leaving your HTML.
 - [Zustand](https://github.com/pmndrs/zustand): A small, fast, and scalable state management library for React.
 - [Axios](https://axios-http.com/): Promise-based HTTP client for the browser and Node.js.
 - [Vite](https://vitejs.dev/): A fast build tool and development server for modern web projects.
 - [Vitest](https://vitest.dev/): A Vite-native testing framework.
 - [Jest](https://jestjs.io/): A delightful JavaScript testing framework with a focus on simplicity.
 - [Testing Library](https://testing-library.com/): Simple and complete testing utilities for React components.
-- [Storybook](https://storybook.js.org/): Tool for developing UI components in isolation.
 - [MSW (Mock Service Worker)](https://mswjs.io/): API mocking library for testing and development.
 - [Husky](https://typicode.github.io/husky): Git hooks made easy, enabling automation of tasks on Git commits.
 - [ESLint](https://eslint.org/): A static code analysis tool to identify problematic patterns.
