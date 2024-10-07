@@ -1,6 +1,7 @@
 # React Boilerplate: High-Performance, Scalable Applications
 
-This boilerplate is designed for developers who need to quickly set up a scalable and high-performance React application. It integrates modern tools like TypeScript, Jest, Vite, and Storybook, aiming to provide an optimized and efficient development environment right out of the box.
+This boilerplate is designed for developers who need to quickly set up a scalable and high-performance React application. It integrates modern tools, aiming to provide an optimized and efficient development environment right out of the box.
+
 
 ## Node.js Version
 
