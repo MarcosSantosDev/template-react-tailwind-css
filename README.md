@@ -24,15 +24,6 @@ This project is compatible with Node.js versions `>= 20.0.0`. While it may work 
   ```bash
     npm run coverage
   ```
-  
-- Start Storybook: Launches the Storybook environment to develop components in isolation.
-  ```bash
-    npm run storybook
-  ```
-- Build Storybook: Creates a static bundle of the Storybook UI.
-  ```bash
-    npm run build-storybook
-  ```
 
 ## :books: Technologies Used
 
