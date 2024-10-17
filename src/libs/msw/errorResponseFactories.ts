@@ -14,18 +14,18 @@ export const createErrorResponse = (error: ErrorResponse) => {
 
 export const notFoundError = createErrorResponse({
 	status: 404,
-	message: 'Recurso não encontrado',
+	message: 'Resource not found',
 	code: 'NOT_FOUND',
 });
 
 export const unauthorizedError = createErrorResponse({
 	status: 401,
-	message: 'Acesso não autorizado',
+	message: 'Unauthorized access',
 	code: 'UNAUTHORIZED',
 });
 
 export const serverError = createErrorResponse({
 	status: 500,
-	message: 'Erro interno do servidor',
+	message: 'Internal server error',
 	code: 'SERVER_ERROR',
 });
