@@ -4,6 +4,7 @@ const routePaths = {
 	ROOT: '/',
 	ROOT_INDEX: '/',
 	ROOT_ANALYTICS: '/analytics',
+	ROOT_TO_DO_LIST: '/to-do-list',
 	ROOT_INVOICE: '/invoice',
 	ROOT_SCHEDULE: '/schedule',
 	ROOT_CALENDAR: '/calendar',

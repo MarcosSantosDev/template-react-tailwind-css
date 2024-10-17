@@ -64,7 +64,7 @@ export const useAuth = () => {
 			const response = await authSignInUserMutation.mutateAsync(credentials);
 			localStorageUtils.setAccessToken(response.access_token);
 			setLoggedUser({ user: response.user });
-		} catch (error) {
+		} catch {
 			localStorageUtils.resetAccessToken();
 			resetLoggedUser();
 		} finally {
