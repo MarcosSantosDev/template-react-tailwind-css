@@ -9,7 +9,7 @@ type ListItemProps = {
 
 const ListItem = ({ task, onCompleteTask, onDeleteTask }: ListItemProps) => {
 	return (
-		<div className="grid grid-cols-[auto_auto] items-center justify-between gap-x-16 rounded-md p-14 shadow">
+		<div className="grid grid-cols-[auto_auto] items-center justify-between gap-x-16 rounded-md border p-14">
 			<div className="flex items-center gap-10">
 				<IconButton
 					title={task.isDone ? 'Deselect task as done' : 'Mark task as done'}

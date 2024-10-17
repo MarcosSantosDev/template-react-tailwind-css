@@ -31,9 +31,9 @@ const Form = () => {
 	};
 
 	return (
-		<div className="w-full space-y-20">
-			<h2 className="text-h2">What are you going to do today ?</h2>
-			<div className="flex gap-x-16 rounded-md p-14 shadow">
+		<div className="w-full space-y-20 rounded-md border p-14">
+			<h3 className="text-h3">What are you going to do today ?</h3>
+			<div className="flex gap-x-16">
 				<form
 					ref={formRef}
 					onSubmit={handleSubmit}
