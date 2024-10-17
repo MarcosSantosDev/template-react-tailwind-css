@@ -2,8 +2,7 @@ import * as React from 'react';
 
 const ExamplePage1 = React.lazy(() => import('@/pages/ExamplePage1'));
 const ExamplePage2 = React.lazy(() => import('@/pages/ExamplePage2'));
-const ExamplePage3 = React.lazy(() => import('@/pages/ExamplePage3'));
-const ExamplePage4 = React.lazy(() => import('@/pages/ExamplePage4'));
+const ToDoList = React.lazy(() => import('@/pages/ToDoList'));
 
 import { NavigationRouteObject } from './route.types';
 import routePaths from './routePaths';
@@ -26,19 +25,11 @@ export const appRoutesNavigation: NavigationRouteObject[] = [
 		navigationIcon: 'chart-column',
 	},
 	{
-		id: 'ROOT_INVOICE',
+		id: 'ROOT_TO_DO_LIST',
 		index: true,
-		path: routePaths.ROOT_INVOICE,
-		element: <ExamplePage3 />,
-		navigationTitle: 'Invoice',
-		navigationIcon: 'ticket',
-	},
-	{
-		id: 'ROOT_SCHEDULE',
-		index: true,
-		path: routePaths.ROOT_SCHEDULE,
-		element: <ExamplePage4 />,
-		navigationTitle: 'Schedule',
-		navigationIcon: 'notepad-text',
+		path: routePaths.ROOT_TO_DO_LIST,
+		element: <ToDoList />,
+		navigationTitle: 'To-Do List',
+		navigationIcon: 'list-todo',
 	},
 ];

@@ -16,7 +16,7 @@ const Header = () => {
 				<img
 					src="assets/images/logos/playground-logo.png"
 					alt="Logo"
-					className="w-100 h-auto"
+					className="h-auto w-100"
 				/>
 			)}
 			<IconButton onClick={togglePanel}>
