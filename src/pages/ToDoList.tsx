@@ -1,4 +1,4 @@
-import ToDoList from '@/features/examplePage01/components/ToDoList';
+import ToDoList from '@/features/to-do-list/components/ToDoList';
 
 const ToDoListPage = () => {
 	return (

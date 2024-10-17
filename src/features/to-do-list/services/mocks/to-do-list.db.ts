@@ -1,7 +1,7 @@
 import { factory, primaryKey } from '@mswjs/data';
 
 export const toDoListDB = factory({
-	user: {
+	task: {
 		id: primaryKey(String),
 		name: String,
 		isDone: Boolean,

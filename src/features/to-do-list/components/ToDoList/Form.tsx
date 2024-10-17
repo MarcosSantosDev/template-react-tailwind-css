@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import { Button, Input } from '@/components/ui';
-import { useMutationCreateTask } from '@/features/examplePage01/services/react-query/to-do-list.mutations';
-import { CreateTaskParams } from '@/features/examplePage01/types/to-do-list.types';
+import { Icon, IconButton, Input } from '@/components/ui';
+import { useMutationCreateTask } from '@/features/to-do-list/services/react-query/to-do-list.mutations';
+import { CreateTaskParams } from '@/features/to-do-list/types/to-do-list.types';
 
 const Form = () => {
 	const formRef = React.useRef<HTMLFormElement>(null);
@@ -33,7 +33,7 @@ const Form = () => {
 	return (
 		<div className="w-full space-y-20">
 			<h2 className="text-h2">What are you going to do today ?</h2>
-			<div className="flex gap-x-16">
+			<div className="flex gap-x-16 rounded-md p-14 shadow">
 				<form
 					ref={formRef}
 					onSubmit={handleSubmit}
@@ -44,12 +44,17 @@ const Form = () => {
 						name="name"
 						placeholder="Task name"
 					/>
-					<Button
+					<IconButton
+						title="Create task"
+						variant="confirm"
+						size="md"
 						type="submit"
-						variant="primary"
 					>
-						Create Task
-					</Button>
+						<Icon
+							name="square-plus"
+							size="md"
+						/>
+					</IconButton>
 				</form>
 			</div>
 		</div>
