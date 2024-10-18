@@ -5,7 +5,7 @@ type PanelState = {
 	togglePanel: () => void;
 };
 
-export const usePanelState = create<PanelState>((set) => ({
+export const useSidebarPanelState = create<PanelState>((set) => ({
 	panelIsOpened: true,
 	togglePanel: () => set((state) => ({ panelIsOpened: !state.panelIsOpened })),
 }));

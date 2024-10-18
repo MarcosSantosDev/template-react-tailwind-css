@@ -3,10 +3,10 @@ import { Button } from '@/components/ui';
 type RouteErrorElementFallbackProps = {
 	title: string;
 	subtitle: string;
-	onGoToHomePage: () => void;
+	onBackToTop: () => void;
 };
 
-const RouteErrorElementFallback = ({ title, subtitle, onGoToHomePage }: RouteErrorElementFallbackProps) => (
+const RouteErrorElementFallback = ({ title, subtitle, onBackToTop }: RouteErrorElementFallbackProps) => (
 	<div
 		role="alert"
 		className="flex h-screen w-full flex-col items-center justify-center gap-8 p-8 md:flex-row"
@@ -23,11 +23,11 @@ const RouteErrorElementFallback = ({ title, subtitle, onGoToHomePage }: RouteErr
 			<p className="text-xl text-neutral-400">{subtitle}</p>
 			<div className="mt-24 flex justify-end">
 				<Button
-					onClick={onGoToHomePage}
+					onClick={onBackToTop}
 					variant="secondary"
 					icon="move-left"
 				>
-					Voltar ao inicio
+					Back to top
 				</Button>
 			</div>
 		</div>

@@ -4,13 +4,13 @@ import routePaths from '@/router/config/routePaths';
 
 import RouteErrorElementFallback from './RouteErrorElementFallback';
 
-const notFoundMessage = 'Desculpe, não conseguimos encontrar a página que você tentou acessar';
+const notFoundMessage = "Sorry, we couldn't find the page you tried to access";
 
 const RouteErrorElement = () => {
 	const navigate = useNavigate();
 	const error = useRouteError();
 
-	const handleGoToHomePage = () => {
+	const handleBackToTop = () => {
 		navigate(routePaths.ROOT);
 	};
 
@@ -22,7 +22,7 @@ const RouteErrorElement = () => {
 			<RouteErrorElementFallback
 				title={title}
 				subtitle={subtitle}
-				onGoToHomePage={handleGoToHomePage}
+				onBackToTop={handleBackToTop}
 			/>
 		);
 	}

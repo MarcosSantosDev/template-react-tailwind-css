@@ -2,11 +2,11 @@ import clsx from 'clsx';
 
 import { Avatar, AvatarFallback, AvatarImage, Icon, IconButton } from '@/components/ui';
 import { useAuth } from '@/features/auth/hooks/useAuth';
-import { usePanelState } from '@/features/routes/hooks/useSidebarPanelState';
+import { useSidebarPanelState } from '@/hooks';
 
 const Footer = () => {
 	const { logout, user } = useAuth();
-	const { panelIsOpened } = usePanelState();
+	const { panelIsOpened } = useSidebarPanelState();
 
 	return (
 		<div className="border-secondary flex max-w-full flex-col border-t p-10">

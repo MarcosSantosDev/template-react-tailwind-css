@@ -2,12 +2,12 @@ import { Navigate, Outlet } from 'react-router-dom';
 
 import { Sidebar, Suspense } from '@/components/app';
 import { useAuth } from '@/features/auth/hooks/useAuth';
-import { usePanelState } from '@/features/routes/hooks/useSidebarPanelState';
+import { useSidebarPanelState } from '@/hooks';
 import routePaths from '@/router/config/routePaths';
 
 const PrivateLayout = () => {
 	const { isAuthenticated } = useAuth();
-	const { panelIsOpened } = usePanelState();
+	const { panelIsOpened } = useSidebarPanelState();
 
 	if (!isAuthenticated) {
 		return (

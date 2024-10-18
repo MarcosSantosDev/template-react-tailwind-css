@@ -2,13 +2,13 @@ import clsx from 'clsx';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { Icon } from '@/components/ui';
-import { usePanelState } from '@/features/routes/hooks/useSidebarPanelState';
+import { useSidebarPanelState } from '@/hooks';
 import { appRoutesNavigation } from '@/router/config/app.routes';
 
 const Nav = () => {
 	const location = useLocation();
 	const navigate = useNavigate();
-	const { panelIsOpened } = usePanelState();
+	const { panelIsOpened } = useSidebarPanelState();
 
 	const itemActive = (pathName: string) => {
 		return pathName === location.pathname;

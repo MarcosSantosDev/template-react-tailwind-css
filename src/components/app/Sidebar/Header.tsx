@@ -1,10 +1,10 @@
 import clsx from 'clsx';
 
 import { Icon, IconButton } from '@/components/ui';
-import { usePanelState } from '@/features/routes/hooks/useSidebarPanelState';
+import { useSidebarPanelState } from '@/hooks';
 
 const Header = () => {
-	const { panelIsOpened, togglePanel } = usePanelState();
+	const { panelIsOpened, togglePanel } = useSidebarPanelState();
 
 	return (
 		<div
