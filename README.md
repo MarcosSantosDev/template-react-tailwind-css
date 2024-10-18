@@ -2,6 +2,48 @@
 
 This boilerplate is designed for developers who need to quickly set up a scalable and high-performance React application. It integrates modern tools, aiming to provide an optimized and efficient development environment right out of the box.
 
+## Project Structure (main files)
+
+```markdown
+📦 template-react-tailwind-css/
+├── 📂 .husky/
+├── 📂 .vscode/
+├── 📂 docs/ /* File with project documentation */
+├── 📂 public/
+│ ├── 📂 assets/
+│ │ ├── 📂 images/
+│ ├── 📄 mockServiceWorker.js
+├── 📂 src/
+│ ├── 📂 @types/
+│ ├── 📂 components/
+│ │ ├── 📂 app/ /* Global components used by the application once */
+│ │ ├── 📂 ui/ /* Global components used by the entire application */
+│ ├── 📂 constants/ /* Global application constants */
+│ ├── 📂 features/ /* Each “feature”, such as auth, has a small “src” inside it, for the "feature" created */
+│ │ ├── 📂 auth/
+│ │ │ ├── 📂 components/
+│ │ │ ├── 📂 hooks/
+│ │ │ ├── 📂 services/
+│ │ │ ├── 📂 types/
+│ ├── 📂 HOC/
+│ ├── 📂 hooks/ /* Global application hooks */
+│ ├── 📂 layouts/ /* Application layouts */
+│ ├── 📂 libs/ /* Library configurations */
+│ ├── 📂 styles/ /* Global application styles */
+│ ├── 📂 utils/ /* Global application utilities */
+│ ├── 📂 pages/
+│ │ ├── 📄 SignIn.tsx
+│ ├── 📂 router/
+│ │ ├── 📄 index.ts /* Routes supplier */
+│ │ ├── 📂 config
+│ │ │ ├── 📄 route.types.ts /* Route types */
+│ │ │ ├── 📄 routePaths.ts /* Route paths */
+│ │ │ ├── 📄 app.routes.ts /* Personalized routes with icons and titles */
+│ │ │ ├── 📄 routes.ts /* Application routes */
+│ │ │ ├── 📄 routesNavigationToConfig.ts /* Method that undoes customized routes */
+│ ├── 📄 env.ts /* Type-validated environment variables */
+│ ├── 📄 main.ts
+```
 
 ## Node.js Version
 
