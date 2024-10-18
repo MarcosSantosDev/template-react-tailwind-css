@@ -1,5 +1,3 @@
-import { faker } from '@faker-js/faker';
-
 import { HttpResponse, http } from 'msw';
 
 import { CreateTaskParams, DeleteTaskParams, UpdateTaskParams } from '@/features/to-do-list/types/to-do-list.types';
@@ -11,7 +9,7 @@ export const toDoListHandlers = [
 	http.post<never, CreateTaskParams>('api/tasks', async ({ request }) => {
 		const { name } = await request.json();
 
-		const newUser = toDoListDB.task.create({ id: faker.string.uuid(), name, isDone: false });
+		const newUser = toDoListDB.task.create({ name, isDone: false });
 
 		return HttpResponse.json(newUser, { status: 201 });
 	}),
